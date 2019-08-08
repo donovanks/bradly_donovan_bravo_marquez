@@ -34,10 +34,10 @@ public class MovPuntos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 dir = target.position - sierra.position;
+        Vector2 dir = target.position - sierra.position;
 
-        float distance = Vector3.Distance(sierra.position, target.position);
-        float distancePlayer = Vector3.Distance(sierra.position, player.position);
+        float distance = Vector2.Distance(sierra.position, target.position);
+        float distancePlayer = Vector2.Distance(sierra.position, player.position);
 
         sierra.Translate(dir.normalized * velocidad, Space.World);
 

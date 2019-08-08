@@ -12,13 +12,13 @@ public class DañoPlayer : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
 
 
         if (collision.gameObject.tag == "Player")
         {
-            vidajugador.vida -= 3;
+            vidajugador.vida -= 10;
         }
     }
 }
