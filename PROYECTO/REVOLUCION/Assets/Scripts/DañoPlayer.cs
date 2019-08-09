@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class DañoPlayer : MonoBehaviour
 {
     Vida vidajugador;
@@ -20,5 +20,12 @@ public class DañoPlayer : MonoBehaviour
         {
             vidajugador.vida -= 10;
         }
+
+        if(vidajugador.vida == 0)
+        {
+            SceneManager.LoadScene( "level1");
+        }
+
     }
+
 }
