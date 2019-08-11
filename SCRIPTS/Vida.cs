@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 
 public class Vida : MonoBehaviour
+ // codigo para que la vida sea visible en la pantalla en forma de texto
 {
     public float vida;
     public Text vidaText;

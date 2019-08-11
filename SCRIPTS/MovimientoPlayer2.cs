@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovimientoPlayer2 : MonoBehaviour
 {
+    //codigo para que el jugador se pueda mover adelante,atras,arriba y abajo a una cierta velocidad presionando las teclas de las flechas
     float velocidad = 250f;
 
     // Start is called before the first frame update

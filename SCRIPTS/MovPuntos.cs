@@ -11,6 +11,7 @@ public enum EnemigoIA
 
 
 public class MovPuntos : MonoBehaviour
+  // codigo para que los enemigos patrullen una cierta area
 {
     public float velocidad;
     public Transform sierra;

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
+// codigo para que en el menu al precionar el boton inicio, inicie el juego y el boton salir quite el juego
 {
     public void PlayGame()
 {

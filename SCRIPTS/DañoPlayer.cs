@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class DañoPlayer : MonoBehaviour
 {
+    //codigo para que el enemigo haga daño al jugador y redusca su vida en una cantidad de -10 y al llegar a 0 se rainicie el juego al nivel uno 
     Vida vidajugador;
 
     void Start()

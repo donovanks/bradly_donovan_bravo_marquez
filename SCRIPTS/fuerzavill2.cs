@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class fuerzavill2 : MonoBehaviour
 {
+   // codigo para que cuando el jugador colicione con un enemigo este sea empujado
     // Start is called before the first frame update
     void Start()
     {
