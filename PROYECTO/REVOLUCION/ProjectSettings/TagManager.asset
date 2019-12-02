@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemigo
+  - puerta1
+  - puerta2
+  - puerta3
   layers:
   - Default
   - TransparentFX

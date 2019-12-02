@@ -383,7 +383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242850078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.013, y: 15.69, z: -17.312962}
+  m_LocalPosition: {x: -0.013, y: 19.36, z: -17.312962}
   m_LocalScale: {x: 1.5609455, y: 0.8547079, z: 1}
   m_Children: []
   m_Father: {fileID: 1182491030}
@@ -1177,6 +1177,7 @@ GameObject:
   - component: {fileID: 698410857}
   - component: {fileID: 698410855}
   - component: {fileID: 698410859}
+  - component: {fileID: 698410860}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1319,6 +1320,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3579d66317424c94abcb504a561a1180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &698410860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698410852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364d78e822489474c9bbf324c5cad7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &723921751
@@ -2028,7 +2041,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182491028}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2187,26 +2200,13 @@ GameObject:
   - component: {fileID: 1279008022}
   - component: {fileID: 1279008021}
   - component: {fileID: 1279008020}
-  - component: {fileID: 1279008019}
   m_Layer: 0
   m_Name: PUERTA
-  m_TagString: Untagged
+  m_TagString: puerta1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1279008019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279008018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364d78e822489474c9bbf324c5cad7e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1279008020
 Rigidbody2D:
   serializedVersion: 4
