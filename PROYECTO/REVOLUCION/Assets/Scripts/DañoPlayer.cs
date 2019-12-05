@@ -16,12 +16,17 @@ public class DañoPlayer : MonoBehaviour
     {
 
 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "enemigo")
         {
             vidajugador.vida -= 10;
         }
 
-        if(vidajugador.vida == 0)
+        if (collision.gameObject.tag == "agente")
+        {
+            vidajugador.vida -= 20;
+        }  
+
+        if (vidajugador.vida == 0)
         {
             SceneManager.LoadScene( "level1");
         }

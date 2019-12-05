@@ -9,6 +9,7 @@ TagManager:
   - puerta2
   - puerta3
   - plataforma_de_muerte
+  - agente
   layers:
   - Default
   - TransparentFX

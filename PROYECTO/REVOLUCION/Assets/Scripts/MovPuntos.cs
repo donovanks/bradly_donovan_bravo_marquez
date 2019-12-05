@@ -13,7 +13,7 @@ public enum EnemigoIA
 public class MovPuntos : MonoBehaviour
 {
     public float velocidad;
-    public Transform sierra;
+    public Transform Enemigo;
     public Transform[] puntos;
     public Transform target;
     public int indiceTaregt;
@@ -26,7 +26,7 @@ public class MovPuntos : MonoBehaviour
     {
         estadoActual = EnemigoIA.Patrulla;
         target = puntos[1];
-        sierra.position = target.position;
+        Enemigo.position = target.position;
         velocidad = velocidad * Time.deltaTime;
         indiceTaregt = 0;
     }
@@ -34,12 +34,12 @@ public class MovPuntos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 dir = target.position - sierra.position;
+        Vector2 dir = target.position - Enemigo.position;
 
-        float distance = Vector2.Distance(sierra.position, target.position);
-        float distancePlayer = Vector2.Distance(sierra.position, player.position);
+        float distance = Vector2.Distance(Enemigo.position, target.position);
+        float distancePlayer = Vector2.Distance(Enemigo.position, player.position);
 
-        sierra.Translate(dir.normalized * velocidad, Space.World);
+        Enemigo.Translate(dir.normalized * velocidad, Space.World);
 
         if (estadoActual == EnemigoIA.Patrulla)
         {

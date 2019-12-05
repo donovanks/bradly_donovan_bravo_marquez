@@ -5,11 +5,14 @@ using UnityEngine;
 public class MovimientoPlayer2 : MonoBehaviour
 {
     float velocidad = 250f;
+    private Animator anim;
+    CharacterController characterController;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        characterController = GetComponent<CharacterController>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -18,6 +21,8 @@ public class MovimientoPlayer2 : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left * velocidad * Time.deltaTime;
+           
+            
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
