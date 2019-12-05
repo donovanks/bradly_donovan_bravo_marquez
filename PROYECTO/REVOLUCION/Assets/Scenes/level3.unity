@@ -1193,26 +1193,13 @@ GameObject:
   - component: {fileID: 893626187}
   - component: {fileID: 893626186}
   - component: {fileID: 893626185}
-  - component: {fileID: 893626184}
   m_Layer: 0
   m_Name: GameObject (12)
-  m_TagString: Untagged
+  m_TagString: plataforma_de_muerte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &893626184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893626183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 897d626119215dd40a5343ed195b7064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &893626185
 Rigidbody2D:
   serializedVersion: 4
@@ -1507,7 +1494,6 @@ GameObject:
   - component: {fileID: 1005063712}
   - component: {fileID: 1005063716}
   - component: {fileID: 1005063715}
-  - component: {fileID: 1005063714}
   m_Layer: 0
   m_Name: puerta final
   m_TagString: puerta3
@@ -1577,18 +1563,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1005063714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005063711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5203634ff00eddc42b7195287e3dabb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1005063715
 Rigidbody2D:
   serializedVersion: 4
@@ -2617,6 +2591,7 @@ GameObject:
   - component: {fileID: 1727823450}
   - component: {fileID: 1727823449}
   - component: {fileID: 1727823448}
+  - component: {fileID: 1727823452}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2761,6 +2736,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.13935135, y: 0.005644947}
   m_Size: {x: 0.34077483, y: 0.8253116}
   m_Direction: 0
+--- !u!114 &1727823452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727823444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364d78e822489474c9bbf324c5cad7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1737019064
 GameObject:
   m_ObjectHideFlags: 0

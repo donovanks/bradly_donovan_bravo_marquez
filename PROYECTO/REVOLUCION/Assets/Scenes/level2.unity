@@ -603,7 +603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344555147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 354.32, y: 224.06, z: -117.5625}
+  m_LocalPosition: {x: 354.32, y: 224.06, z: 2}
   m_LocalScale: {x: 0.652491, y: 0.95, z: 1}
   m_Children:
   - {fileID: 69481870}
@@ -932,6 +932,7 @@ GameObject:
   - component: {fileID: 769331588}
   - component: {fileID: 769331589}
   - component: {fileID: 769331590}
+  - component: {fileID: 769331591}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1076,6 +1077,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3579d66317424c94abcb504a561a1180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &769331591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769331583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364d78e822489474c9bbf324c5cad7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &797286092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797286092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 354.32, y: 224.06, z: -117.5625}
+  m_LocalPosition: {x: 354.32, y: 224.06, z: 0}
   m_LocalScale: {x: 0.652491, y: 0.95, z: 1}
   m_Children:
   - {fileID: 523803303}
@@ -2063,7 +2076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412942384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 354.32, y: 224.06, z: -117.5625}
+  m_LocalPosition: {x: 354.32, y: 224.06, z: -1}
   m_LocalScale: {x: 0.652491, y: 0.95, z: 1}
   m_Children:
   - {fileID: 1845485742}
@@ -2564,7 +2577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810785603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 370, y: 209.5, z: -117.5625}
+  m_LocalPosition: {x: 370, y: 209.5, z: 1}
   m_LocalScale: {x: 143.9175, y: 16.2764, z: 33.431}
   m_Children:
   - {fileID: 1693705046}

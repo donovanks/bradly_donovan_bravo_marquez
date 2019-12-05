@@ -25,5 +25,10 @@ public class ChangeScene1 : MonoBehaviour
             SceneManager.LoadScene("level3");
         }
 
+        if (other.gameObject.tag == "plataforma_de_muerte")
+        {
+            SceneManager.LoadScene("level3");
+        }
+
     }
 }
