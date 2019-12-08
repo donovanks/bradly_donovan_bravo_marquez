@@ -21,7 +21,7 @@ public class MovimientoPlayer2 : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left * velocidad * Time.deltaTime;
-           
+            anim.SetFloat("valocidad", velocidad);
             
         }
 
