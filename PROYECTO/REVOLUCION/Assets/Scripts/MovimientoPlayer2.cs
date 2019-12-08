@@ -21,7 +21,7 @@ public class MovimientoPlayer2 : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left * velocidad * Time.deltaTime;
-            anim.SetFloat("valocidad", velocidad);
+            anim.SetFloat("velocidad", velocidad);
             
         }
 
@@ -33,6 +33,7 @@ public class MovimientoPlayer2 : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += Vector3.up * velocidad * Time.deltaTime;
+            anim.SetBool("piso", false);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
