@@ -52,6 +52,7 @@ public class MovPuntos : MonoBehaviour
                 {
                     indiceTaregt = 0;
                     target = puntos[indiceTaregt];
+                    
                 }
 
                 indiceTaregt++;

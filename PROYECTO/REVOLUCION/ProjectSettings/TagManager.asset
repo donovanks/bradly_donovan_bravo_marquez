@@ -10,6 +10,7 @@ TagManager:
   - puerta3
   - plataforma_de_muerte
   - agente
+  - piso
   layers:
   - Default
   - TransparentFX
