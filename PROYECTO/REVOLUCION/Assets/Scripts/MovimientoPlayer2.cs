@@ -4,44 +4,56 @@ using UnityEngine;
 
 public class MovimientoPlayer2 : MonoBehaviour
 {
-    float velocidad = 250f;
+    public float velocidad = 250f;
     private Animator anim;
-    CharacterController characterController;
-    bool piso;
 
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left * velocidad * Time.deltaTime;
-            anim.SetFloat("velocidad", 0.1f);
-
+            anim.SetBool("caminar_izq", true);
+        }
+        else
+        {
+            anim.SetBool("caminar_izq", false);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.position += Vector3.right * velocidad * Time.deltaTime;
-           
+            anim.SetBool("caminar", true);
+        }
+        else
+        {
+            anim.SetBool("caminar", false);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += Vector3.up * velocidad * Time.deltaTime;
             anim.SetBool("piso", false);
+
+        }
+        else
+        {
+            anim.SetBool("piso", true);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.position += Vector3.down * velocidad * Time.deltaTime;
-            
         }
-        
+      
     }
 }
+  
